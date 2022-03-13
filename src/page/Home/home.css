@@ -1,0 +1,29 @@
+.home-banner img {
+  width: 100%;
+}
+
+.personal {
+  background-image: url("../../../public/img/personal-bg.png");
+  background-position: center;
+  padding: 81px 0 89px;
+}
+
+.personal-bg {
+  width: 100%;
+}
+
+.company {
+  background-image: url("../../../public/img/group-bg.png");
+  background-position: center;
+  padding: 61px 0 58px;
+}
+
+.company-bg {
+  width: 100%;
+}
+
+.home-news {
+  background-image: url("../../../public/img/news-bg.png");
+  padding: 62px 80px;
+}
+/*# sourceMappingURL=home.css.map */

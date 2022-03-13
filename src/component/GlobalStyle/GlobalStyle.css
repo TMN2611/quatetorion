@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Brownhill;
+  src: url(../../../public/font/BrownhillScript/SVN-BrownhillScript.ttf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  --primary-color: #d20000;
+  --slogan-color: #121212;
+  --gray-color: #454545;
+  --gray-light-color: #45454550;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #454545;
+  font-family: 'Sarabun', sans-serif;
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.text-right {
+  text-align: end;
+}
+.text-center {
+  text-align: center;
+}
+.desc {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  margin: 0;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

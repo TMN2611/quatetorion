@@ -1,0 +1,23 @@
+.header {
+  padding: 16px 0;
+}
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0 51px;
+}
+
+.navLink {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: calc(20 / 15);
+  color: #000;
+  text-transform: uppercase;
+}

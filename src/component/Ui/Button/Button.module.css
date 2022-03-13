@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+.buttonPrimary {
+  padding: 8px 16px;
+  color: white;
+  margin-top: 80px;
+}
+
+.buttonSecondary {
+  padding: 8px 16px;
+  color: var(--primary-color);
+  background-color: #fff;
+  margin-top: 80px;
+}
+.buttonHotline {
+  padding: 10px 22px 14px;
+  color: #f8f9fa;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: cacl(20 / 14);
+  text-transform: capitalize;
+}
+.buttonIcon {
+  margin-left: 10px;
+}

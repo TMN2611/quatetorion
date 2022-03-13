@@ -1,0 +1,28 @@
+.sloganMain {
+  margin-bottom: 30px;
+  color: var(--slogan-color);
+  margin-bottom: 60px;
+}
+.sloganRight {
+  margin-left: auto;
+  text-align: end;
+}
+.sloganCenter {
+  margin-left: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sloganTop {
+  font-family: 'Brownhill';
+  font-size: 45px;
+  line-height: calc(64 / 45);
+  font-weight: 400;
+}
+.sloganTitle {
+  font-size: 50px;
+  line-height: calc(64 / 50);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
