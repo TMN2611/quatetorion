@@ -89,3 +89,9 @@ ul {
   justify-content: center;
   align-items: center;
 }
+.form-group-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 30px;
+}

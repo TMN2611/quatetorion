@@ -1,0 +1,13 @@
+.inputGroup {
+  margin-bottom: 21px;
+}
+.inputName {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: calc(22 / 14);
+  color: #454545;
+}
+.inputStar {
+  margin-top: -10px;
+  color: var(--primary-color);
+}

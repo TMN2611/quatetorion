@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react';
+import Slider from 'react-slick';
 import './company.css';
 
 import Whychoiceme from '../../component/Whychoiceme';
 import Footer from '../../component/Footer';
 import Slogan from '../../component/Ui/Slogan';
 import Products from '../../component/Ui/Products';
+import InputGroup from '../../component/Ui/InputGroup';
+import Button from '../../component/Ui/Button';
 
 export default function Company() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
   const companyProducts = [
     {
@@ -60,6 +63,13 @@ export default function Company() {
         'Với thiết kế sang trọng, đẳng cấp nhưng rất gần gũi, đây sẽ là một lựa chọn hoàn hảo để Quý Doanh Nghiệp sử dụng như một món quà tri ân đến các đối tác, nhân viên của mình trong dịp Tết Nhâm Dần 2022.',
     },
   ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 4,
+  };
   return (
     <div>
       <div className='company-products'>
@@ -92,6 +102,93 @@ export default function Company() {
       </div>
 
       <Whychoiceme />
+      <div className='customer-partner'>
+        <div className='container'>
+          <Slogan
+            sloganTop='Hơn cả sự tin tưởng là An tâm'
+            sloganTitle='khách hàng & đối tác'
+            maxWidthDesc='777.5px'
+            maxWidthTitle='630px'
+            center
+            uppercaseTitle
+          />
+          <Slider {...settings} className='customer-partner--list'>
+            <div className='customer-partner--item'>
+              <img src='./img/Customer-Partner/-1634876753.png' alt='' />
+            </div>
+            <div className='customer-partner--item'>
+              <img src='./img/Customer-Partner/-1634876785.png' alt='' />
+            </div>
+            <div className='customer-partner--item'>
+              <img src='./img/Customer-Partner/-1634876809.png' alt='' />
+            </div>
+            <div className='customer-partner--item'>
+              <img src='./img/Customer-Partner/-1634876855.png' alt='' />
+            </div>
+            <div className='customer-partner--item'>
+              <img src='./img/Customer-Partner/-1634877150.png' alt='' />
+            </div>
+            <div className='customer-partner--item'>
+              <img src='./img/Customer-Partner/-1635933197.png' alt='' />
+            </div>
+            <div className='customer-partner--item'>
+              <img src='./img/Customer-Partner/-1634876753.png' alt='' />
+            </div>
+          </Slider>
+        </div>
+      </div>
+
+      <section className='form-section'>
+        <div className='container'>
+          <div className='form-wrapper'>
+            <h3 className='form-title text-center'>
+              Đặt bộ quà tết orion <br /> cho doanh nghiệp của bạn
+            </h3>
+            <p className='form-desc text-center'>
+              Orion mang đến lựa chọn hoàn hảo cho nhu cầu mua sắm quà Tết của
+              mọi nhà và các doanh nghiệp.
+            </p>
+
+            <form action=''>
+              <h4 className='form-subTitle'>Thông tin doanh nghiệp</h4>
+              <InputGroup
+                placeholder='Nhập tên công ty'
+                inputName={'Tên công ty'}
+              />
+              <div className='form-group-2col'>
+                <InputGroup
+                  placeholder='Nhập tên công ty'
+                  inputName={'Tên công ty'}
+                />
+                <InputGroup
+                  placeholder='Nhập tên công ty'
+                  inputName={'Tên công ty'}
+                />
+              </div>
+              <InputGroup
+                placeholder='Nhập tên công ty'
+                inputName={'Tên công ty'}
+              />
+              <h4 className='form-subTitle'>Thông tin doanh nghiệp</h4>
+              <div className='form-group-2col'>
+                <InputGroup
+                  placeholder='Nhập tên công ty'
+                  inputName={'Tên công ty'}
+                />
+                <InputGroup
+                  placeholder='Nhập tên công ty'
+                  inputName={'Tên công ty'}
+                />
+              </div>
+              <Button title={'Gửi yêu cầu'} fullWidth primary hotline />
+            </form>
+            <div className='faq text-center'>
+              <p className='faq-title'>Bạn cần tư vấn? Liên hệ ngay Hotline</p>
+              <p className='faq-hotline'>0971 998 755</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );

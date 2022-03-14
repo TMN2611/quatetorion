@@ -7,6 +7,7 @@ export default function Button({
   primary,
   secondary,
   title,
+  fullWidth,
   ...props
 }) {
   let Button = 'button';
@@ -18,6 +19,7 @@ export default function Button({
   return (
     <Button
       {...props}
+      style={{ width: fullWidth ? '100%' : '' }}
       className={clsx(styles.button, {
         [styles.buttonHotline]: hotline,
         [styles.buttonPrimary]: primary,
